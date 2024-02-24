@@ -11,7 +11,7 @@ export const useRequestDeleteTodos = (refreshTodos) => {
       .then(() => {
         refreshTodos();
       })
-      .finally(console.log(target.id));
+      .finally();
   };
   return {
     deleteTodo,

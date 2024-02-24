@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 export const useSearchTodos = (todos) => {
   const [searchTodos, setSearchTodos] = useState(todos);
   const [searchTodoEl, setSearchTodoEl] = useState("");
-  console.log(searchTodos);
 
   const onSearchTodoChange = ({ target }) => {
     setSearchTodoEl(target.value);

@@ -8,7 +8,6 @@ export const useSortTodos = (searchTodos, todos) => {
         a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1
       )
     );
-    console.log(sortTodo);
   }, [searchTodos, todos]);
 
   return { sortTodo };
